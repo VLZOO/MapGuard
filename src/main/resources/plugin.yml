@@ -1,0 +1,48 @@
+name: MapGuard
+version: 1.0
+main: com.VLZO.mapguard.MapGuard
+api-version: 1.13
+author: VLZO
+description: Auto-save and backup plugin for Minecraft worlds, including crash recovery and SlimeWorldManager support
+
+commands:
+  mapguard:
+    description: Main command for MapGuard (use subcommands)
+    usage: /mg <reload | backup [all|world|slime] | save [all|world|slime] | preload <slimeName>>
+    aliases: [mg]
+    permission: mapguard.use
+    permission-message: "§cYou do not have permission to use this command."
+
+permissions:
+  # Base permission to access /mapguard and see help
+  mapguard.use:
+    description: Allows using /mapguard and viewing help
+    default: op
+
+  # Full access bundle for admins
+  mapguard.admin:
+    description: Full access to all MapGuard commands and tab completion
+    default: op
+    children:
+      mapguard.use: true
+      mapguard.reload: true
+      mapguard.backup: true
+      mapguard.save: true
+      mapguard.preload: true
+
+  # Individual permissions
+  mapguard.reload:
+    description: Allows reloading the MapGuard configuration
+    default: op
+
+  mapguard.backup:
+    description: Allows running backups (all, world, slime)
+    default: op
+
+  mapguard.save:
+    description: Allows saving worlds (all, world, slime)
+    default: op
+
+  mapguard.preload:
+    description: Allows preloading and teleporting to slime worlds
+    default: op

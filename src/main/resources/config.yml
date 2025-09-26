@@ -1,0 +1,91 @@
+# Plugin maintained by VLZO: https://github.com/VLZOO
+
+# ------------------------
+# Save & Backup Timing
+# ------------------------
+
+# Enable or disable automatic world saving
+enable-auto-save: true
+
+# Show a save message in the in-game chat when auto-save runs
+show-save-message: true
+
+# The message text shown in chat when a save occurs
+save-message-text: "§2[MG] §fWorld saved successfully!"
+
+# ------------------------
+# Normal World Settings
+# ------------------------
+
+normal-worlds:
+  # Time in minutes between each automatic world save
+  save-interval-minutes: 5
+
+  # Time in minutes between each automatic backup
+  # ⚠ Warning: Frequent backups (especially under 15 minutes) can negatively affect server TPS,
+  # particularly during zip operations or when handling large worlds.
+  # It is strongly recommended to keep this value at 15 minutes or higher to maintain stable performance.
+  backup-interval-minutes: 15
+
+  # Maximum number of backups to keep per world
+  max-backups: 5
+
+  # List of world names to exclude from backup (but still save them)
+  backup-disabled-worlds:
+    - lobby_disabled
+    - world_disabled
+
+# ------------------------
+# SlimeWorldManager Settings
+# ------------------------
+
+slime-worlds:
+  # Enable backup of SlimeWorldManager .slime files
+  enable-slimeworld-backup: true
+
+  # Time in minutes between each automatic backup
+  # ⚠ Warning: Frequent backups (especially under 15 minutes) can negatively affect server TPS,
+  # particularly during zip operations or when handling large worlds.
+  # It is strongly recommended to keep this value at 15 minutes or higher to maintain stable performance.
+  backup-interval-minutes: 30
+
+  # Maximum number of slime backups to keep per world
+  max-backups: 3
+
+  # List of slime world names to exclude from backup
+  backup-disabled-worlds:
+    - lobby_disabled
+    - world_disabled
+
+# Allow manual backup of specific worlds via command
+allow-manual-world-backup: true
+
+# ------------------------
+# Crash Recovery
+# ------------------------
+
+# Enable crash detection and automatic restoration of the latest backup
+enable-crash-detection: true
+
+# Enable or disable automatic backup feature
+enable-auto-backup: true
+
+# ------------------------
+# Block Protection
+# ------------------------
+
+# Prevent leaves from decaying naturally
+protect-decay: true
+
+# Prevent farmland from drying out
+protect-farmland: true
+
+# Prevent sand and gravel from falling due to physics
+protect-physics: true
+
+# ------------------------
+# Debugging
+# ------------------------
+
+# Enable debug logs for protection events
+debug-mode: false
