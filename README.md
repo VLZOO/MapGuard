@@ -7,7 +7,7 @@
 
 ---
 
-## 🚀 What MapGuard Does Best
+## What MapGuard Does Best
 
 - Protects normal Bukkit/Spigot worlds and SlimeWorldManager `.slime` files.  
 - Minimizes data loss from sudden shutdowns and crashes with frequent, safe saves.  
@@ -17,7 +17,7 @@
 
 ---
 
-## ✨ Core Features
+## Core Features
 
 ### Crash Recovery
 - Crash detection and admin alerts when the server restarts without a clean shutdown.  
@@ -50,7 +50,7 @@
 
 ---
 
-## 🔧 Commands
+## Commands
 
 ```bash
 /mapguard reload                # Reload config
@@ -64,7 +64,7 @@
 
 ---
 
-## 🔐 Permissions
+## Permissions
 
 | Permission         | What It Does                                | Default |
 |--------------------|----------------------------------------------|---------|
@@ -78,7 +78,7 @@ Use LuckPerms or your preferred manager to assign these to groups or users.
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. Place `MapGuard.jar` into your server's `/plugins` folder.  
 2. Restart the server.  
@@ -185,7 +185,7 @@ debug-mode: false
 
 ---
 
-## 💡 Best Practices — Keep your map safe during attacks
+## Best Practices — Keep your map safe during attacks
 
 - Restrict save/backup permissions to trusted admin roles only.  
 - Keep an off-site copy of important backups (remote storage or sync).  
@@ -194,7 +194,7 @@ debug-mode: false
 
 ---
 
-## 🚀 Quick Examples
+## Quick Examples
 
 Save everything:  
 `/mapguard save all`
